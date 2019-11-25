@@ -1,0 +1,33 @@
+#imageCaption-icon {
+    padding-left: 30px;
+}
+
+.imageCaption-popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.imageCaption-popup .imageCaption-popuptext {
+    width: 600px;
+
+    background:rgba(0,0,0,0.35);
+    color: whitesmoke;
+    border-radius: 6px;
+
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    position: absolute;
+    z-index: 1;
+    margin-left: 0px;
+
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.imageCaption-popup .show {
+    opacity: 1;
+    margin-left: 40px;
+}
