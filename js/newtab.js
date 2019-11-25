@@ -85,7 +85,7 @@ class TodoList {
 
 const backgrounds = [   
     {
-        src: "noir.gif",
+        src: "alley.gif",
         caption: '.'
     },
     {
@@ -113,11 +113,11 @@ const backgrounds = [
         caption: 'Our oceans are overfished and polluted. We are wiping out marine species and poisoning ourselves; consuming toxic seafoods containing mercury, lead, cadmium, dioxins, PCBs, pesticides, microplastics, etc. Ocean acidification levels are alarmingly high, we have to go back 35 million years to find an equivalent level. Dead zones are growing. Every year we produce 300 million tons of plastic, and ever year, we dump eight tons in our oceans.'
     },
     {
-        src: "cyberpunk_city2.gif",
+        src: "pixelcity.gif",
         caption: 'Our oceans are overfished and polluted. We are wiping out marine species and poisoning ourselves; consuming toxic seafoods containing mercury, lead, cadmium, dioxins, PCBs, pesticides, microplastics, etc. Ocean acidification levels are alarmingly high, we have to go back 35 million years to find an equivalent level. Dead zones are growing. Every year we produce 300 million tons of plastic, and ever year, we dump eight tons in our oceans.'
     },
     {
-        src: "cyberpunk_city3.gif",
+        src: "desk.gif",
         caption: 'Our oceans are overfished and polluted. We are wiping out marine species and poisoning ourselves; consuming toxic seafoods containing mercury, lead, cadmium, dioxins, PCBs, pesticides, microplastics, etc. Ocean acidification levels are alarmingly high, we have to go back 35 million years to find an equivalent level. Dead zones are growing. Every year we produce 300 million tons of plastic, and ever year, we dump eight tons in our oceans.'
     },
     {
@@ -134,6 +134,10 @@ const backgrounds = [
     },
     {
         src: "hacker.gif",
+        caption: 'Our oceans are overfished and polluted. We are wiping out marine species and poisoning ourselves; consuming toxic seafoods containing mercury, lead, cadmium, dioxins, PCBs, pesticides, microplastics, etc. Ocean acidification levels are alarmingly high, we have to go back 35 million years to find an equivalent level. Dead zones are growing. Every year we produce 300 million tons of plastic, and ever year, we dump eight tons in our oceans.'
+    },       
+    {
+        src: "tv.gif",
         caption: 'Our oceans are overfished and polluted. We are wiping out marine species and poisoning ourselves; consuming toxic seafoods containing mercury, lead, cadmium, dioxins, PCBs, pesticides, microplastics, etc. Ocean acidification levels are alarmingly high, we have to go back 35 million years to find an equivalent level. Dead zones are growing. Every year we produce 300 million tons of plastic, and ever year, we dump eight tons in our oceans.'
     }
 ];
