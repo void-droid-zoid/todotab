@@ -18,7 +18,7 @@ To use your own profile and also persist changes to that profile:
 
 You can easily find the path to your Firefox profile by going Firefox's hamburger menu > Help > Troubleshooting information.
 
-# Contributions
+# Contributing
 
 
 # Distribution and signing
