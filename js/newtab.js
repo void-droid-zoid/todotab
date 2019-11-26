@@ -138,6 +138,18 @@ const backgrounds = [
     {
         src: "sigg.gif",
         caption: 'Our oceans are overfished and polluted. We are wiping out marine species and poisoning ourselves; consuming toxic seafoods containing mercury, lead, cadmium, dioxins, PCBs, pesticides, microplastics, etc. Ocean acidification levels are alarmingly high, we have to go back 35 million years to find an equivalent level. Dead zones are growing. Every year we produce 300 million tons of plastic, and ever year, we dump eight tons in our oceans.'
+    },
+    {
+        src: "steam.gif",
+        caption: 'Our oceans are overfished and polluted. We are wiping out marine species and poisoning ourselves; consuming toxic seafoods containing mercury, lead, cadmium, dioxins, PCBs, pesticides, microplastics, etc. Ocean acidification levels are alarmingly high, we have to go back 35 million years to find an equivalent level. Dead zones are growing. Every year we produce 300 million tons of plastic, and ever year, we dump eight tons in our oceans.'
+    },
+    {
+        src: "original.gif",
+        caption: 'Our oceans are overfished and polluted. We are wiping out marine species and poisoning ourselves; consuming toxic seafoods containing mercury, lead, cadmium, dioxins, PCBs, pesticides, microplastics, etc. Ocean acidification levels are alarmingly high, we have to go back 35 million years to find an equivalent level. Dead zones are growing. Every year we produce 300 million tons of plastic, and ever year, we dump eight tons in our oceans.'
+    },
+    {
+        src: "original2.gif",
+        caption: 'Our oceans are overfished and polluted. We are wiping out marine species and poisoning ourselves; consuming toxic seafoods containing mercury, lead, cadmium, dioxins, PCBs, pesticides, microplastics, etc. Ocean acidification levels are alarmingly high, we have to go back 35 million years to find an equivalent level. Dead zones are growing. Every year we produce 300 million tons of plastic, and ever year, we dump eight tons in our oceans.'
     }
 ];
 
