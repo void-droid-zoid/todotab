@@ -11,21 +11,16 @@
 		}
     },
     "background": {
-		"scripts": ["js/newtab.js",
-		"js/all.js",
-		"vendor/vue/vue.min.js",
-		"vendor/moment.js",
-		"js/utils.js",
-		"js/vue_app.js"]
-    },
-
+		"scripts": [""
+		]
+	},
+	
     "icons": {
         "16": "icon-16.png",
         "32": "icon-32.png",
         "128": "icon-128.png"
     },
-
-	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	
 	"chrome_url_overrides": {
 		"newtab": "newtab.html"
 	},

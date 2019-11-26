@@ -2,7 +2,6 @@
         - display datetime when hovering over a todo ("added <datetime>")
         - notes area (toggle to show) with markdown support
 */
-
 const noop = () => {};
 
 class TodoList {
@@ -105,7 +104,7 @@ const backgrounds = [
         caption: 'Our oceans are overfished and polluted. We are wiping out marine species and poisoning ourselves; consuming toxic seafoods containing mercury, lead, cadmium, dioxins, PCBs, pesticides, microplastics, etc. Ocean acidification levels are alarmingly high, we have to go back 35 million years to find an equivalent level. Dead zones are growing. Every year we produce 300 million tons of plastic, and ever year, we dump eight tons in our oceans.'
     },
     {
-        src: "cyberpunk_city.gif",
+        src: "game-day_of_the_tentacle.gif",
         caption: 'Our oceans are overfished and polluted. We are wiping out marine species and poisoning ourselves; consuming toxic seafoods containing mercury, lead, cadmium, dioxins, PCBs, pesticides, microplastics, etc. Ocean acidification levels are alarmingly high, we have to go back 35 million years to find an equivalent level. Dead zones are growing. Every year we produce 300 million tons of plastic, and ever year, we dump eight tons in our oceans.'
     },
     {
@@ -140,6 +139,8 @@ const backgrounds = [
 
 let current_background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
 document.body.style.backgroundImage = `url('../backgrounds/${current_background.src}')`;
+
+console.log("current background: " + current_background.src);
 
 document.getElementById('add_todo').addEventListener('keyup', todo_input_handler);
 

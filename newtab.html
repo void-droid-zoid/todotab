@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-eval' 'unsafe-inline'"> -->
+
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/help.css">
@@ -35,7 +37,8 @@
 
             </div>
 
-            <div class="imageCaption-popup" onclick="display_imageCaption_popup()">
+            <!-- TODO: CSP will not allow the use of onclick. Use addEventListener or "assignment to .onclick"? -->
+            <div class="imageCaption-popup" onclick="display_imageCaption_popup()"> 
                 <span style="color: whitesmoke;"><i class="fas fa-info-circle" id="imageCaption-icon"></i></span>
                 <span v-html="HTMLcontent" class="imageCaption-popuptext" id="image-popup"></span>
             </div>
@@ -47,6 +50,7 @@
             </div>
 
             <div>
+                <!-- TODO: CSP will not allow the use of onclick. Use addEventListener or "assignment to .onclick"? -->
                 <div class="help-popup" onclick="display_help_popup()">
                     <span style="color: whitesmoke;"><i class="fas fa-question-circle" id="help-icon"></i></span>
                     <span class="help-popuptext" id="popup">left click completes<br/> right click to delete<br/> hold ctrl to select a fleet</span>
@@ -55,6 +59,7 @@
                 <div id="todoCol">
                     <ul id="todo-list" contextmenu="delete">
                         <menu type="context" id="delete">
+                            <!-- TODO: CSP will not allow the use of onclick. Use addEventListener or "assignment to .onclick"? -->
                             <menuitem label="Delete todo" onclick="delete_todo()"></menuitem>
                         </menu>
                     </ul>
