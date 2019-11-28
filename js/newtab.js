@@ -14,7 +14,7 @@ class TodoList {
 
         this.ready = browser.storage.sync.get('todos')
             .then(({ todos }) => {
-                this.todos = JSON.parse(todos);
+                this.todos = (todos && JSON.parse(todos)) || [];
                 this.onReady(this.todos);
             });
     }
