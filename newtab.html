@@ -21,20 +21,8 @@
         <div class="top">
 
             <div id="datetimeContainer">
-                <h1 id="datetime">
-                    <span v-cloak>
-                        {{ date.dayname }} {{ date.day }} <br/>
-                        {{ date.month }} {{ date.fullyear }} <br/>                                                
-                    </span>
-                </h1>
-
-                <h1 id="weeknumber">
-                    <span v-cloak>
-                        {{ week }}                        
-                    </span>
-                </h1>
-
-
+                <h1 id="datetime"></h1>
+                <h1 id="weeknumber"></h1>
             </div>
 
             <div id="image_caption" class="imageCaption-popup"> 
@@ -65,21 +53,11 @@
                 <div id="footerRightCol">
                     <input type="text" placeholder="new todo" id="add_todo">
                 </div>
-
-                <!--
-                <div id="vue-todolist">
-                    <ol>
-                        <todo-item v-for="todo in todoList" v-bind:todo="todo" v-bind:key="todo.id"></todo-item>
-                    </ol>
-                </div>
-                -->
         </div>
     </div>
 
-    <script src="vendor/vue/vue.min.js"></script>
     <script src="vendor/moment.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/newtab.js"></script>
-    <script src="js/vue_app.js"></script>
 </body>
 </html>
