@@ -6,16 +6,6 @@ var vm = new Vue({
     // options
 })
 
-var vue_imageCaption = new Vue({
-    el: '#image-popup',
-    data: {
-        HTMLcontent: null,
-    },
-    created() {
-        this.HTMLcontent = current_background.caption
-    },
-});
-
 var vue_dateTime = new Vue({
     el: '#datetime',
     data: {
