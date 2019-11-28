@@ -319,3 +319,23 @@ for (const menu of document.getElementsByTagName("menu")) {
         item.addEventListener("click", delete_todo);
     }
 }
+
+(function init_datetime() {
+    const element = document.getElementById('datetime');
+    if (!element)
+        return;
+
+    const date = get_datetime();
+    
+    element.innerHTML = date.dayname + ' ' + date.day + '<br/>' + date.month + ' ' + date.fullyear;
+})();
+
+(function init_weeknumber() {
+    const element = document.getElementById('weeknumber');
+    if (!element)
+        return;
+
+    const week = get_weeknumber();
+
+    element.innerHTML = week;
+})();
