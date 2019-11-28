@@ -298,8 +298,24 @@ function display_imageCaption_popup() {
     let el = document.getElementById("image-popup");
     el.classList.toggle("show");
 
+    document.getElementById("image-popup").innerText = current_background.caption;
+
     if (bVisible) {
         setTimeout(() => el.classList.toggle("show"), 40000);
         bVisible = false;
+    }
+}
+
+document
+    .getElementById("image_caption")
+    .addEventListener("click", display_imageCaption_popup);
+
+document
+    .getElementById("help_popup")
+    .addEventListener("click", display_help_popup);
+
+for (const menu of document.getElementsByTagName("menu")) {
+    for (const item of menu.childNodes) {
+        item.addEventListener("click", delete_todo);
     }
 }
