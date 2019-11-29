@@ -132,10 +132,6 @@ const backgrounds = [
         caption: 'Lorem ipsum'
     },    
     {
-        src: "forest.jpg",
-        caption: 'Lorem ipsum'
-    },
-    {
         src: "shrooms3.jpg",
         caption: 'Lorem ipsum'
     },
@@ -143,10 +139,6 @@ const backgrounds = [
         src: "shrooms4.jpg",
         caption: 'Lorem ipsum'
     },
-    {
-        src: "shrooms5.jpg",
-        caption: 'Lorem ipsum'
-    }
 ];
 
 let current_background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
