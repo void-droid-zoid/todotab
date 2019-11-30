@@ -15,9 +15,14 @@ function get_datetime() {
     // return dayname + " " + day + "<br/>" + month + " " + d.getFullYear();
 }
 
-function get_weeknumber() {
-
-    var weeknumber = moment("11-26-2016", "MMDDYYYY").isoWeek();
-
-    return "Week " + weeknumber;
+Date.prototype.getWeek = function() {
+    var date = new Date(this.getTime());
+    date.setHours(0, 0, 0, 0);
+   
+    date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
+   
+    var week1 = new Date(date.getFullYear(), 0, 4);
+   
+    return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000
+                          - 3 + (week1.getDay() + 6) % 7) / 7);
 }

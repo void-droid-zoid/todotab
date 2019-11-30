@@ -323,7 +323,7 @@ for (const menu of document.getElementsByTagName("menu")) {
     if (!element)
         return;
 
-    const week = get_weeknumber();
-
+    const week = new Date().getWeek();
+    
     element.innerHTML = week;
 })();
