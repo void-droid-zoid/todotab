@@ -95,10 +95,17 @@ input {
 }
 
 #datetime {    
+    font-size: 34px;
+    color: whitesmoke;    
+}
+
+#dateyear {    
+    font-size: 24px;
     color: whitesmoke;    
 }
 
 #weeknumber {    
+    font-size: 22px;
     color: whitesmoke;     
 }
 

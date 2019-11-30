@@ -315,7 +315,10 @@ for (const menu of document.getElementsByTagName("menu")) {
 
     const date = get_datetime();
     
-    element.innerHTML = date.dayname + ' ' + date.day + '<br/>' + date.month + ' ' + date.fullyear;
+    element.innerText = date.dayname + ' ' + date.day;
+
+    const el = document.getElementById('dateyear');
+    el.innerText = date.month + ' ' + date.fullyear;
 })();
 
 (function init_weeknumber() {
@@ -325,5 +328,5 @@ for (const menu of document.getElementsByTagName("menu")) {
 
     const week = new Date().getWeek();
     
-    element.innerHTML = week;
+    element.innerText = 'Week ' + week;
 })();
