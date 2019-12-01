@@ -20,8 +20,8 @@ You can easily find the path to your Firefox profile by going Firefox's hamburge
 
 # Contributing
 
+Contributions are very welcome!
 
-# Distribution and signing
-If you want to use the addon on the daily, and if you want to distribute it to others, you should create a signed XPI file.
+Check Issues for things that need doing.
 
-Read about this here: https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/
+Use plain JavaScript, no libraries.
