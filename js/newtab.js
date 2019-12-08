@@ -10,16 +10,16 @@ window.addEventListener('keyup', (event) => {
         return;
     }
 
-    if (keyName === 'Escape') {
-        console.log('esc pressed');
+    if (keyName === 'Escape') {        
         document.getElementById("add_todo").blur();
         // TODO: remove text inputted on blur
     }
 });
 
-window.onload = function() {
-    console.log("loaded");
+window.onload = function() {    
     document.hasFocus();    
+
+    console.log("As you can see there are still bugs and quirks to work out, I would also like a few more features (multiple todo lists). Contributions are very welcome, https://github.com/erikbye/todotab")
 }
 
 const noop = () => {};
@@ -104,47 +104,108 @@ class TodoList {
 
 const backgrounds = [   
     {
-        src: "elephant.jpg",
+        src: "0.jpg",
+        caption: "Though no one can go back and make a brand-new start, anyone can start from now and make a brand-new ending."
+    },    
+    {
+        src: "1.jpg",
+        caption: "Only put off until tomorrow what you are willing to die having left undone."
+    },
+    {
+        src: "2.jpg",
+        caption: "Whenever you find yourself on the side of the majority, it is time to pause and reflect."
+    },
+    {
+        src: "3.jpg",
+        caption: "Rarely have I seen a situation where doing less than the other guy is a good strategy."
+    },
+    {
+        src: "4.jpg",
+        caption: "If you genuinely want something, don't wait for it--teach yourself to be impatient."
+    },
+    {
+        src: "5.jpg",
+        caption: "Motivation is what gets you started. Habit [or passion/dedication/willpower] is what keeps you going."
+    },
+    {
+        src: "6.jpg",
+        caption: "If you don't design your own life plan, chances are you'll fall into someone else's plan. And guess what they have planned for you? Not much."
+    },
+    {
+        src: "7.jpg",
+        caption: "To be successful you must accept all challenges that come your way. You can't just accept the ones you like."
+    },
+    {
+        src: "8.jpg",
+        caption: "Many of life's failures are people who did not realize how close they were to success when they gave up."
+    },
+    {
+        src: "9.jpg",
+        caption: "The greater the artist, the greater the doubt. Perfect confidence is granted to the less talented as a consolation prize."
+    },
+    {
+        src: "10.jpg",
+        caption: "Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential."
+    },
+    {
+        src: "11.jpg",
+        caption: "Logic will get you from A to B. Imagination will take you everywhere."
+    },
+    {
+        src: "12.jpg",
+        caption: "Keep on going, and the chances are that you will stumble on something, perhaps when you are least expecting it. I never heard of anyone ever stumbling on something sitting down."
+    },
+    {
+        src: "13.jpg",
+        caption: "I cannot give you the formula for success, but I can give you the formula for failure--It is: Try to please everybody."
+    },
+    {
+        src: "14.jpg",
         caption: "Failure should be our teacher, not our undertaker. Failure is delay, not defeat. It is a temporary detour, not a dead-end. Failure is something we can avoid only by saying nothing, doing nothing, and being nothing."
     },
     {
-        src: "landscape.jpg",
-        caption: "Lorem ipsum"
+        src: "15.jpg",
+        caption: "Success usually comes to those who are too busy to be looking for it."
     },
     {
-        src: "landscape2.jpg",
-        caption: "Lorem ipsum"
+        src: "16.jpg",
+        caption: "It is better to fail in originality than to succeed in imitation."
     },
     {
-        src: "landscape3.jpg",
-        caption: "Lorem ipsum"
+        src: "17.jpg",
+        caption: "All progress takes place outside the comfort zone."
     },
     {
-        src: "shrooms.jpg",
-        caption: "Lorem ipsum"
+        src: "18.jpg",
+        caption: "Opportunities don't happen. You create them."
     },
     {
-        src: "shrooms2.jpg",
-        caption: "Lorem ipsum"
+        src: "19.jpg",
+        caption: "Success is walking from failure to failure with no loss of enthusiasm."
     },
     {
-        src: "butterfly.jpg",
-        caption: 'Lorem ipsum'
-    },    
-    {
-        src: "shrooms3.jpg",
-        caption: 'Lorem ipsum'
+        src: "20.jpg",
+        caption: "The ones who are crazy enough to think they can change the world, are the ones that do."
     },
     {
-        src: "shrooms4.jpg",
-        caption: 'Lorem ipsum'
+        src: "21.jpg",
+        caption: "If you really look closely, most overnight successes took a long time."
+    },
+    {
+        src: "22.jpg",
+        caption: "The successful warrior is the average man, with laser-like focus."
+    },
+    {
+        src: "23.jpg",
+        caption: "Success is the sum of small efforts, repeated day-in and day-out."
     },
 ];
 
-let current_background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-document.body.style.backgroundImage = `url('../backgrounds/${current_background.src}')`;
+// TODO: choose background image based on hour of day
+let hour = new Date().getHours(); // returns 0-23
+let current_background = backgrounds[hour];
 
-console.log("current background: " + current_background.src);
+document.body.style.backgroundImage = `url('../backgrounds/${current_background.src}')`;
 
 document.getElementById('add_todo').addEventListener('keyup', todo_input_handler);
 
@@ -189,7 +250,8 @@ function append_todo_to_HTML_list(todo, list) {
     child.todo = todo;
     child.id = 'todo-item-' + todo.id;
     child.title = todo.date.toString();
-    child.onmouseover = () => { console.log(todo.date.toString() ) };
+    
+    // child.onmouseover = () => { console.log(todo.date.toString() ) };
 
     const span = document.createElement('span');
     span.innerText = todo.text;
@@ -301,6 +363,28 @@ document
 document
     .getElementById("help_popup")
     .addEventListener("click", display_help_popup);
+
+document
+    .getElementById("darkModeToggle")
+    .addEventListener("click", toggle_darkMode);
+
+
+function toggle_darkMode() {
+    console.log("toggle_darkMode()");
+
+    let icon = document.querySelector('.fa.fa-sun-o');
+
+    icon.classList.toggle('fa-moon-o');
+
+    // var checkbox = document.getElementById("checkBox");
+
+    // console.log(checkbox);
+    // console.log(checkbox.checked);
+
+    // browser.storage.sync.set({checkbox}).catch(console.log);
+
+    // c.set({ todos: JSON.stringify(this.todos) }).catch(console.log);
+}
 
 for (const menu of document.getElementsByTagName("menu")) {
     for (const item of menu.childNodes) {
