@@ -18,6 +18,10 @@ To use your own profile and also persist changes to that profile:
 
 You can easily find the path to your Firefox profile by going Firefox's hamburger menu > Help > Troubleshooting information.
 
+# Install production version
+
+https://addons.mozilla.org/en-US/firefox/addon/eriktodotab/
+
 # Contributing
 
 Contributions are very welcome!
