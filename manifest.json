@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Todotab",
 	"short_name": "todotab",
-	"version": "0.9.9.5",
+	"version": "0.9.9.6",
 	"description": "a minimal new tab with todos",
 	"applications": {
 		"gecko": {
