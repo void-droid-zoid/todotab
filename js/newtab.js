@@ -1,7 +1,4 @@
-/* TODO:
-        - display datetime when hovering over a todo ("added <datetime>")
-        - notes area (toggle to show) with markdown support
-*/
+// TODO: notes area (toggle to show)
 window.addEventListener('keyup', (event) => {
     const keyName = event.key;
 
@@ -201,7 +198,6 @@ const backgrounds = [
     },
 ];
 
-// TODO: choose background image based on hour of day
 let hour = new Date().getHours(); // returns 0-23
 let current_background = backgrounds[hour];
 
@@ -242,7 +238,6 @@ function todo_input_handler(e) {
     }
     return false;
 }
-
 const contextmenuitems = [];
 
 function append_todo_to_HTML_list(todo, list) {
@@ -250,9 +245,7 @@ function append_todo_to_HTML_list(todo, list) {
     child.todo = todo;
     child.id = 'todo-item-' + todo.id;
     child.title = todo.date.toString();
-    
-    // child.onmouseover = () => { console.log(todo.date.toString() ) };
-
+ 
     const span = document.createElement('span');
     span.innerText = todo.text;
 
@@ -367,7 +360,6 @@ document
 document
     .getElementById("darkModeToggle")
     .addEventListener("click", toggle_darkMode);
-
 
 function toggle_darkMode() {
     console.log("toggle_darkMode()");
