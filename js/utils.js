@@ -11,8 +11,6 @@ function get_datetime() {
     timeZone: 'Europe/Oslo'});
     
     return { dayname, day, month, fullyear: d.getFullYear() };
-
-    // return dayname + " " + day + "<br/>" + month + " " + d.getFullYear();
 }
 
 Date.prototype.getWeek = function() {
