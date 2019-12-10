@@ -20,7 +20,7 @@ You can easily find the path to your Firefox profile by going Firefox's hamburge
 
 # Install production version
 
-https://addons.mozilla.org/en-US/firefox/addon/todonewtab/
+https://addons.mozilla.org/en-US/firefox/addon/newtabtodo/
 
 # Contributing
 
